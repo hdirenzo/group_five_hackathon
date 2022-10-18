@@ -1,7 +1,9 @@
 # HouseCom™ ThermoSecurity™ System 
 HouseCom™ ThermoSecurity™ System is a fully digital, hardwired and wireless (WiFi, Bluetooth)
 enabled home personal and secure environment control system. All communications with the central system are accessible and controlled through the wall unit, product app. and the secured portal on the parent
-website. The HouseCom™ ThermoSecurity™ System App. is available on both iOS and Android devices. Whether you wish to adjust the temperature of your home from your Android or iPhone watch or access
+website.
+
+The HouseCom™ ThermoSecurity™ System App. is available on both iOS and Android devices. Whether you wish to adjust the temperature of your home from your Android or iPhone watch or access
 the home security system on your phone to check in on the house occupancy through the remote, portable cameras. You may wish to look for independent room temperatures, smoke and carbon monoxide status or
 just open windows and unlocked doors for your return home.
 
