@@ -1,0 +1,11 @@
+@import "./modules/reset";
+
+body {
+    font-size: 16px;
+
+    background-color: black
+}
+
+@import "./modules/defaults.scss";
+
+@import "./modules/_main.scss";
