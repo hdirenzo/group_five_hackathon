@@ -1,6 +1,5 @@
 {
-    "info": [
-        {
+    "info1": {
             "name": "Tempest",
             "year": "2008",
             "brand": "ThermoSecurity",
@@ -12,8 +11,8 @@
             "shipment": "Delivery",
             "heating": "Baseboard",
             "accessories": "Cover"
-        }
-{
+    },
+    "info2": {
             "name": "Sphere",
             "year": "2010",
             "brand": "ThermoSecurity",
@@ -25,8 +24,8 @@
             "shipment": "Express Delivery",
             "heating": "Radiant Heating",
             "accessories": "Wall Plates"
-        }
-{
+        },
+    "info3": {
             "name": "Harvest",
             "year": "2014",
             "brand": "ThermoSecurity",
@@ -38,8 +37,8 @@
             "shipment": "Free Shipping",
             "heating": "Baseboard",
             "accessories": "Cover"
-        }
-{
+        },
+    "info4": {
             "name": "Aura",
             "year": "2018",
             "brand": "ThermoSecurity",
@@ -51,8 +50,8 @@
             "shipment": "Pick Up",
             "heating": "Radiant Heating",
             "accessories": "Cover"
-        }
-{
+        },
+    "info5": {
             "name": "Comfort",
             "year": "2020",
             "brand": "ThermoSecurity",
@@ -65,4 +64,4 @@
             "heating": "Radiant Heating",
             "accessories": "Wall Plates"
         }
-    ]
+  }
