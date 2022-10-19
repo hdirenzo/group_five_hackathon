@@ -7,40 +7,40 @@ import { getData } from "./modules/dataMiner.js";
 
     // Variables
     let btnArrow = document.querySelector(".arrow");
+    let featuresDiv = document.querySelector(".featuresDiv");
+    let featuresContent = document.querySelector(".featuresContent");
 
     // Functions
-     function getJSONData (favThings) {
+     function getJSONData (featuresList) {
          console.log("getJSONData...ok");
 
          // Make the thing an object with keys
-         let productSpecsObj = Object.keys(productSpecs);
+         let productSpecsObj = Object.keys(featuresList);
 
          // Run a loop for each item in the JSON file. We're passing in a variable called objectID that will do things
-         productSpecs.forEach(objectID => {
+         productSpecsObj.forEach(objectID => {
              // admittedly, this is stupid but it works
                  // target the first child, then target the children
-             let panel = cardTemplate.cloneNode(true),
-             cardContainer = panel.firstElementChild,
-             cardStuff = cardContainer.firstElementChild.children;
+             let panel = featuresContent.cloneNode(true),
+              featuresStuff = panel.children;
 
-             // fuckin finally this works
              panel.firstElementChild.id = objectID;
 
-             // make event listener here because they don't work outside of this function
-             panel.firstElementChild.addEventListener('click',function(prof) {
-                 flipCard(objectID);
-             })
-
              // populate our template items with the data from the JSON file in order of appearance
-             cardStuff[1].textContent = favThings[objectID].name;
-             cardStuff[3].textContent = favThings[objectID].why;
-             cardStuff[4].textContent = favThings[objectID].desc;
+             featuresStuff[1].textContent = featuresList[objectID].name;
+             featuresStuff[2].textContent = featuresList[objectID].year;
+             featuresStuff[3].textContent = featuresList[objectID].brand;
+             featuresStuff[4].textContent = featuresList[objectID].type;
+             featuresStuff[5].textContent = featuresList[objectID].material;
+             featuresStuff[6].textContent = featuresList[objectID].price;
+             featuresStuff[7].textContent = featuresList[objectID].colour;
+             featuresStuff[8].textContent = featuresList[objectID].install;
+             featuresStuff[9].textContent = featuresList[objectID].shipment;
+             featuresStuff[10].textContent = featuresList[objectID].heating;
+             featuresStuff[11].textContent = featuresList[objectID].accessories;
 
              // add the completed element to the page
-             cardDisplay.appendChild(panel);
-
-             // change the background
-             document.querySelector(`#${objectID}`).style.backgroundImage = `url(images/${objectID}.jpg)`;
+             featuresDiv.appendChild(panel);
          })
      }
 
