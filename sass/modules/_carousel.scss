@@ -8,20 +8,16 @@
 
 .carouselSection {
     display: grid;
-    
-
 }
 
 .carouselContainer {
-    // padding: 10em 2em;
-    grid-template-rows: repeat(5, 200px);
+    display: grid;
+    grid-template-columns: repeat(1fr);
     overflow: hidden;
-    height: 75%;
-    width: 75%;
+    height: 30vh;
     border-radius: 1em;
-    transition: .25s;
-    text-align: center;
-    vertical-align: middle;
+    justify-items: center;
+    align-items: center;
     }
     
     .carouselContainer:hover {
@@ -40,17 +36,10 @@
         // background-color: black;
         // opacity: 80%;
         padding: 1em;
-        background-color: black;
         align-items: center;
         justify-items: center;
-        height: 100%;
-        backdrop-filter: blur(8px);
         border-radius: 1em;
         transition: .25s;
-    }
-    
-    .carousel:hover{
-        backdrop-filter: blur(0px);
     }
 
 .arrow {
