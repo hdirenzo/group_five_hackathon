@@ -1,0 +1,67 @@
+{
+    "info1": {
+            "name": "Tempest",
+            "year": "2008",
+            "brand": "ThermoSecurity",
+            "type": "Non-programmable",
+            "material": "Bi-metal Coil",
+            "price": "Single",
+            "colour": "Avalanche White",
+            "install": "DIY",
+            "shipment": "Delivery",
+            "heating": "Baseboard",
+            "accessories": "Cover"
+    },
+    "info2": {
+            "name": "Sphere",
+            "year": "2010",
+            "brand": "ThermoSecurity",
+            "type": "Programmable",
+            "material": "Metal Strip",
+            "price": "Bundle",
+            "colour": "Eclipse Black",
+            "install": "Profssional Installation",
+            "shipment": "Express Delivery",
+            "heating": "Radiant Heating",
+            "accessories": "Wall Plates"
+        },
+    "info3": {
+            "name": "Harvest",
+            "year": "2014",
+            "brand": "ThermoSecurity",
+            "type": "Touchscreen",
+            "material": "Copper",
+            "price": "Monthly",
+            "colour": "Avalanche White",
+            "install": "Profssional Installation",
+            "shipment": "Free Shipping",
+            "heating": "Baseboard",
+            "accessories": "Cover"
+        },
+    "info4": {
+            "name": "Aura",
+            "year": "2018",
+            "brand": "ThermoSecurity",
+            "type": "Wireless",
+            "material": "Copper",
+            "price": "Annually",
+            "colour": "Avalanche White",
+            "install": "DIY",
+            "shipment": "Pick Up",
+            "heating": "Radiant Heating",
+            "accessories": "Cover"
+        },
+    "info5": {
+            "name": "Comfort",
+            "year": "2020",
+            "brand": "ThermoSecurity",
+            "type": "Communicating",
+            "material": "Bi-metal Coil",
+            "price": "Bundle",
+            "colour": "Avalanche White",
+            "install": "DIY",
+            "shipment": "Free Shipping",
+            "heating": "Radiant Heating",
+            "accessories": "Wall Plates"
+        }
+    }
