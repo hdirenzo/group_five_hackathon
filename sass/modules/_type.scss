@@ -1,4 +1,25 @@
+h1 {
+    font-size: 5.5em !important;
+    font-weight: 400 !important;
+}
+
 h2 {
-    font-size: 2em;
-    font-weight: 400;
+    font-size: 4em !important;
+    font-weight: 400 !important;
+}
+
+h3 {
+    font-size: 3em !important;
+    font-weight: 400 !important;
+}
+
+h4 {
+    font-size: 2em !important;
+    font-weight: 400 !important;
+}
+
+p.subtitle{
+    font-size: 1.5em;
+    padding: 10px 0px 20px;
+    line-height: 1.5;
 }

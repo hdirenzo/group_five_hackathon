@@ -1,9 +1,10 @@
+// Modules
+@import "./modules/_carousel.scss";
+@import "./modules/_type.scss";
+@import "./modules/_vars.scss";
+@import "./modules/_main.scss";
+@import "./modules/mobile";
+
 // Resets and stuff
 @import "./modules/reset";
 @import "./modules/defaults.scss";
-
-// Modules
-@import "./modules/_carousel.scss";
-@import "./modules/_main.scss";
-@import "./modules/_type.scss";
-@import "./modules/mobile";

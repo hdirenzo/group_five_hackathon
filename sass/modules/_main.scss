@@ -1,19 +1,26 @@
-body {
-font-family: 'Mulish', sans-serif;
-background-color: #dddad6;
-}
-
-
-
-.hidden {
-    display: none;
-}
-
 .nav {
     display: flex;
     justify-content: space-between;
     align-content: stretch;
     flex-wrap: nowrap;
+
+    .nav-list{
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
+        font-size: 1.5em;
+
+        a{
+            text-decoration: none;
+            color: $color-main;
+        }
+    }
+    button{
+        display: flex;
+        justify-content: space-evenly;
+        align-self: center;
+    }
 }
 
 .logo {
@@ -21,55 +28,65 @@ background-color: #dddad6;
     width: 15em;
 }
 
-.brown_btn {
-    background-color: #e0cdb8;
-    height: 50px;
-    width: 100px;
-    margin: 2em;
-    margin-left: 40px;
+.heroSection > div{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+}
 
-    h3 {
-        text-align: center;
-        padding: 17px;
+.heroSection{
+    margin: 4% 0 10%;
+    .herotext{
+        flex: 3;
+        margin: 0px 40px;
+        h2 {
+            font-size: 5em;
+        }
+        
+        .purpleBox{
+            justify-content: space-around;
+            align-items: flex-end;
+            line-height: 1.8;
+            font-size: 1.2em;
+
+            img{
+                width: 50px;
+            }
+        }
+    }
+    
+    .heroimg{
+        flex: 4;
+        align-self: center;
+        img {
+            width: 100%;
+        }
     }
 }
 
-.pad1 {
-    padding: 1em;
-    text-align: left;
-
-    h2 {
-        margin: 50px;
-    }
-    h3 {
-        margin: 10px;
-        padding-left: 30px;
+.carousel-con{    
+    .title{
+        flex: 20 !important;
     }
 
+    .carouselImg > div{
+        flex: 3
+    }
 }
 
-.pad2 {
-    padding: 4em;
-}
+.featurescontent {
+    
+    gap: 50px;
 
-.botPad {
-    padding-bottom: 1em;
-}
-
-.purpleBox {
-    background-color: rgb(224, 172, 224);
-}
-
-.hero_img {
-    width: 25em;
-    height: 15em;
-}
-ul {
-    li {
-        display: inline;
-        padding-left: 50px;
-        margin: 20px;
-        text-align: center;
+    .featuresText{
+        img{
+            width: 20px;
+            color: $color-third;
+        }
+        p {
+            text-align: justify !important;
+            font-size: 1.5em;
+        }
     }
 }
 
@@ -83,71 +100,56 @@ ul {
     h2 {
         margin: 20px;
     }
-        .purple_btn {
-            align-self: center;
-            background-color:rgb(224, 172, 224);
-            height: 50px;
-            width: 100px;
-            margin: 2em;
-            margin-left: 40px;
-            }
+    
+    .purple_btn {
+        align-self: center;
+        background-color:rgb(224, 172, 224);
+        height: 50px;
+        width: 100px;
+        margin: 2em;
+        margin-left: 40px;
     }
+}
 
-    .featurescontent {
-        p {
-            padding: 10px;
-        }
-    }
-
-        .featuresdiv {
-        width: 100%;
+footer {
+    width: 100%;
+    background-color:rgb(204, 189, 219);
+    
+    .footercontent {
         text-align: center;
-        margin: 20px;
+        
         h2 {
-            text-align: center;
-            margin: 20px;
-        }
-        .features-img {
-            padding: 2em;
-            width: 25em;
-             }
+        font-size: medium;
+        font-weight: bold;
+        padding: 20px;
         }
 
-        footer {
-            width: 100%;
-            background-color:rgb(204, 189, 219);
-            
-            .footercontent {
-               text-align: center;
-              
-               h2 {
-                font-size: medium;
-                font-weight: bold;
-                padding: 20px;
-               }
+    }
 
-            }
+    .subscribe {
+        width: 80%;
+        text-align: right;
+    }
 
-            .subscribe {
-                width: 80%;
-                text-align: right;
-            }
+    .subscribe_btn {
+        background-color: #e0cdb8;
+        height: 50px;
+        width: 100px;
+        margin: 2em;
+        margin-left: 40px;
+        font-size: small;
+    }
+    
+    
+}
 
-            .subscribe_btn {
-                background-color: #e0cdb8;
-                height: 50px;
-                width: 100px;
-                margin: 2em;
-                margin-left: 40px;
-                font-size: small;
-            }
-            
-            
-        }
+.nav-footer {
+    font-size: smaller;
+}    
 
-        .nav-footer {
-            font-size: smaller;
-        }
+        
+
+        
 
 /* grid */
 
