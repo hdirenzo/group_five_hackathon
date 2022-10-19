@@ -1,12 +1,9 @@
+// Resets and stuff
 @import "./modules/reset";
-
-body {
-    font-size: 16px;
-
-    background-color: black
-}
-
 @import "./modules/defaults.scss";
 
+// Modules
 @import "./modules/_carousel.scss";
 @import "./modules/_main.scss";
+@import "./modules/_type.scss";
+@import "./modules/mobile";

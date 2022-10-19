@@ -6,42 +6,47 @@ import { getData } from "./modules/dataMiner.js";
     console.log('main run...ok')
 
     // Variables
+    let btnArrow = document.querySelector(".arrow");
 
     // Functions
-    // function getJSONData (favThings) {
-    //     console.log("getJSONData...ok");
+     function getJSONData (favThings) {
+         console.log("getJSONData...ok");
 
-    //     // Make the thing an object with keys
-    //     let favThingsObj = Object.keys(favThings);
+         // Make the thing an object with keys
+         let productSpecsObj = Object.keys(productSpecs);
 
-    //     // Run a loop for each item in the JSON file. We're passing in a variable called objectID that will do things
-    //     favThingsObj.forEach(objectID => {
-    //         // admittedly, this is stupid but it works
-    //             // target the first child, then target the children
-    //         let panel = cardTemplate.cloneNode(true),
-    //         cardContainer = panel.firstElementChild,
-    //         cardStuff = cardContainer.firstElementChild.children;
+         // Run a loop for each item in the JSON file. We're passing in a variable called objectID that will do things
+         productSpecs.forEach(objectID => {
+             // admittedly, this is stupid but it works
+                 // target the first child, then target the children
+             let panel = cardTemplate.cloneNode(true),
+             cardContainer = panel.firstElementChild,
+             cardStuff = cardContainer.firstElementChild.children;
 
-    //         // fuckin finally this works
-    //         panel.firstElementChild.id = objectID;
+             // fuckin finally this works
+             panel.firstElementChild.id = objectID;
 
-    //         // make event listener here because they don't work outside of this function
-    //         panel.firstElementChild.addEventListener('click',function(prof) {
-    //             flipCard(objectID);
-    //         })
+             // make event listener here because they don't work outside of this function
+             panel.firstElementChild.addEventListener('click',function(prof) {
+                 flipCard(objectID);
+             })
 
-    //         // populate our template items with the data from the JSON file in order of appearance
-    //         cardStuff[1].textContent = favThings[objectID].name;
-    //         cardStuff[3].textContent = favThings[objectID].why;
-    //         cardStuff[4].textContent = favThings[objectID].desc;
+             // populate our template items with the data from the JSON file in order of appearance
+             cardStuff[1].textContent = favThings[objectID].name;
+             cardStuff[3].textContent = favThings[objectID].why;
+             cardStuff[4].textContent = favThings[objectID].desc;
 
-    //         // add the completed element to the page
-    //         cardDisplay.appendChild(panel);
+             // add the completed element to the page
+             cardDisplay.appendChild(panel);
 
-    //         // change the background
-    //         document.querySelector(`#${objectID}`).style.backgroundImage = `url(images/${objectID}.jpg)`;
-    //     })
-    // }
+             // change the background
+             document.querySelector(`#${objectID}`).style.backgroundImage = `url(images/${objectID}.jpg)`;
+         })
+     }
+
+     function moveCarousel() {
+        
+     }
 
     // function flipCard(favThing) {
 
@@ -85,6 +90,8 @@ import { getData } from "./modules/dataMiner.js";
 
     //     }
     // }
+
+    btnArrow.addEventListener("click", moveCarousel());
 
     getData(`./data.json`, getJSONData);
 })();
