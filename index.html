@@ -17,44 +17,58 @@
 <body>
     <h1 class="hidden">Index Page</h1>
     <main class="main">
-        <header>
+        <header class="inner-margin">
             <h3 class="hidden">Header</h3>
             <nav class="nav">
                 <img class="logo" src="/images/horizontal_logo.svg">
-                <ul class="pad2">
-                    <li>Home</li>
-                    <li>Product</li>
-                    <li>Contact Us</li>
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#product">Product</a></li>
+                    <li><a href="#contact-us">Contact Us</a></li>
                 </ul>
-                <div class="brown_btn">
-                    <h3>Pricing</h3>
-                </div>
+                <button class="brown_btn">Pricing</button>
             </nav>
         </header>
 
-        <section class="heroSection two-items">
-            <!-- first section -->
-            <div class="pad1">
-                <h2>All New <br> Luxury Thermostat</h2>
-                <h3>We work hard to create stunning, safe spaces that satisfy our clients.</h3>
+        <section class="heroSection flex-one two-items">
+            <div></div>
+            <div class="herotext">
+                <h1>All-new luxury <br> thermostat</h1>
+                <p class="subtitle">We work hard to create stunning, safe spaces <br> that satisfy our clients.</p>
                 <button class="brown_btn">Shop Now</button>
+                <div class="flex purpleBox">
+                    <div>
+                        <img src="assets/free-shipping.svg" alt="free-shipping"> <br>
+                        Free Shipping
+                    </div>
+                    <div>
+                        <img src="assets/security-checked.svg" alt="free-shipping"> <br>
+                        24/7 Support
+                    </div>
+                    <div>
+                        <img src="assets/Like.svg" alt="free-shipping"> <br>
+                        Good Material
+                    </div>
+                </div>
             </div>
-            <div>
-                <img class="hero_img" src="/images/stock images/img-kitchen.jpg">
+            <div class="heroimg">
+                <img src="/images/smart_thermostat_5.jpg">
             </div>
+            <div></div>
         </section>
 
-        <section class="carouselSection">
-            <!--  carousel and text above it -->
-            <div class="info">
-                <!-- text here -->
-                <h2>Where aesthetic and functionality meet</h2>
-                <h3>We are dedicated to building enduring brands through concept-driven design approaches.</h3>
+        <section class="carousel-con carouselSection">
+            
+            <div class="flex flex-one">
+                <div></div>
+                <div class="title">
+                    <h2>Where aesthetic and functionality meet</h2>
+                    <p class="subtitle">We are dedicated to building enduring brands through concept-driven design approaches.</p>
+                </div>
             </div>
 
             <a class="arrow"></a>
-            <div class="carouselContainer">
-                <!-- carousel here -->
+            <div class="flex carouselImg carouselContainer">
                 <div class="carousel" id="active"> <img src="./images/3d renders/smart_thermostat_1.jpg"
                         alt="A 3D render of the smart thermostat" class="carouselImages"></div>
                 <div class="carousel"><img src="./images/3d renders/smart_thermostat_2.jpg"
@@ -65,22 +79,39 @@
                         alt="A 3D render of the smart thermostat" class="carouselImages"></div>
                 <div class="carousel"><img src="./images/3d renders/smart_thermostat_5.jpg"
                         alt="A 3D render of the smart thermostat" class="carouselImages"></div>
+                <div class="carousel"><img src="./images/3d renders/smart_thermostat_6.jpg"
+                            alt="A 3D render of the smart thermostat" class="carouselImages"></div>
             </div>
         </section>
 
 
 
-        <div class="featurescontent">
-            <p>The thermostat is like a valve that opens and closes as a function of its temperature. The thermostat
-                isolates the engine from the radiator until it has reached a certain minimum temperature. Without a
-                thermostat, the engine would always lose heat to the radiator and take longer to warm up.</p>
-            <p>There Is No Life Without Thermostat</p>
-            <p>Regulating The Flow Of Heat And Cold</p>
-            <p>Unique Features and Good Performance</p>
-            <p>This Protects You Forever</p>
-        </div>
-        <img class="features-img" src="/images/apple-watch-mockup.jpg">
+        <section class="flex flex-one inner-margin featurescontent">
 
+            <div class="featuresText">
+                <div class="title">
+                    <h2>Thermostat Aesthetics</h2>
+                    <p class="subtitle">The thermostat is like a valve that opens and closes as a function of its temperature. The thermostat
+                        isolates the engine from the radiator until it has reached a certain minimum temperature. Without a
+                        thermostat, the engine would always lose heat to the radiator and take longer to warm up.</p>
+                </div>
+                
+                <p class="purpleBox">
+                    <img src="assets/check.svg">  
+                    There Is No Life Without Thermostat</p>
+                <p class="purpleBox">
+                    <img src="assets/check.svg">    
+                    Regulating The Flow Of Heat And Cold</p>
+                <p class="purpleBox">
+                    <img src="assets/check.svg">    
+                    Unique Features and Good Performance</p>
+                <p class="purpleBox">
+                    <img src="assets/check.svg">
+                    This Protects You Forever</p>
+            </div>
+            <div>
+                <img class="features-img" src="/images/apple-watch-mockup.jpg">
+            </div>
         </section>
 
         <section class="promodiv">

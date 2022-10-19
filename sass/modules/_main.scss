@@ -1,3 +1,4 @@
+
 body {
     font-family: 'Mulish', sans-serif;
     background-color: #dddad6;
@@ -9,11 +10,30 @@ body {
     display: none;
 }
 
+
 .nav {
     display: flex;
     justify-content: space-between;
     align-content: stretch;
     flex-wrap: nowrap;
+
+    .nav-list{
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
+        font-size: 1.5em;
+
+        a{
+            text-decoration: none;
+            color: $color-main;
+        }
+    }
+    button{
+        display: flex;
+        justify-content: space-evenly;
+        align-self: center;
+    }
 }
 
 .logo {
@@ -21,41 +41,73 @@ body {
     width: 15em;
 }
 
-.brown_btn {
-    background-color: #e0cdb8;
-    height: 50px;
-    width: 100px;
-    margin: 2em;
-    margin-left: 40px;
-
-    h3 {
-        text-align: center;
-        padding: 17px;
-    }
+.heroSection > div{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
 }
 
-.pad1 {
-    padding: 1em;
-    text-align: left;
+.heroSection{
+    margin: 4% 0 10%;
+    .herotext{
+        flex: 3;
+        margin: 0px 40px;
+        h2 {
+            font-size: 5em;
+        }
+        
+        .purpleBox{
+            justify-content: space-around;
+            align-items: flex-end;
+            line-height: 1.8;
+            font-size: 1.2em;
 
-    h2 {
-        margin: 50px;
+            img{
+                width: 50px;
+            }
+        }
     }
+
+    
+    .heroimg{
+        flex: 4;
+        align-self: center;
+        img {
+            width: 100%;
+        }
+
 
     h3 {
         margin: 10px;
         padding-left: 30px;
+
+    }
+}
+
+.carousel-con{    
+    .title{
+        flex: 20 !important;
     }
 
+    .carouselImg > div{
+        flex: 3
+    }
 }
 
-.pad2 {
-    padding: 4em;
-}
 
-.botPad {
-    padding-bottom: 1em;
-}
+.featurescontent {
+    
+    gap: 50px;
+
+    .featuresText{
+        img{
+            width: 20px;
+            color: $color-third;
+        }
+        p {
+            text-align: justify !important;
+            font-size: 1.5em;
+        }
 
 .purpleBox {
     background-color: rgb(204, 189, 219);
@@ -86,13 +138,64 @@ ul {
         margin: 20px;
     }
 
+    
+    .purple_btn {
+        align-self: center;
+        background-color:rgb(224, 172, 224);
+
+
     .purple_btn {
         align-self: center;
         background-color: rgb(204, 189, 219);
+
         height: 50px;
         width: 100px;
         margin: 2em;
         margin-left: 40px;
+
+    }
+}
+
+footer {
+    width: 100%;
+    background-color:rgb(204, 189, 219);
+    
+    .footercontent {
+        text-align: center;
+        
+        h2 {
+        font-size: medium;
+        font-weight: bold;
+        padding: 20px;
+        }
+
+    }
+
+    .subscribe {
+        width: 80%;
+        text-align: right;
+    }
+
+    .subscribe_btn {
+        background-color: #e0cdb8;
+        height: 50px;
+        width: 100px;
+        margin: 2em;
+        margin-left: 40px;
+        font-size: small;
+    }
+    
+    
+}
+
+.nav-footer {
+    font-size: smaller;
+}    
+
+        
+
+        
+
     }
 }
 
@@ -153,6 +256,7 @@ footer {
 .nav-footer {
     font-size: smaller;
 }
+
 
 /* grid */
 

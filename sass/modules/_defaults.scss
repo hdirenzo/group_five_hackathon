@@ -1,0 +1,55 @@
+body {
+    font-family: 'Mulish', sans-serif;
+    background-color: $bg-main;
+}
+
+img{
+    width: 100%;
+}
+
+.inner-margin{
+    margin: 0px 5%;
+}
+
+.hidden {
+    display: none;
+}
+
+ul {
+    li {
+        display: inline;
+        padding-left: 50px;
+        margin: 20px;
+        text-align: center;
+    }
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-one > div{
+    flex: 1;
+}
+
+
+.purpleBox {
+    background-color: $bg-secondary;
+    color: $color-third;
+    padding: 30px 15px;
+    margin-top: 20px;
+}
+
+.brown_btn {
+    background-color: $color-secondary;
+    text-align: center;
+    cursor: pointer;
+    color: $color-third;
+    border: none;
+    padding: 20px 50px;
+    font-size: 20px;
+}
+
+.botPad {
+    padding-bottom: 1em;
+}
