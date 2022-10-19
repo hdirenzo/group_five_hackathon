@@ -1,0 +1,20 @@
+.carouselContainer {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+.arrow {
+    color: black;
+    font-size: 10em;
+
+}
+
+.arrow:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.carousel {
+position: absolute;
+}
