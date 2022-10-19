@@ -13,7 +13,7 @@
 .carouselContainer {
     display: grid;
     grid-template-columns: repeat(1fr);
-    overflow: hidden;
+    overflow: scroll;
     height: 30vh;
     border-radius: 1em;
     justify-items: center;

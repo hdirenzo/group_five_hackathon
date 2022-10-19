@@ -80,42 +80,46 @@ ul {
     display: flex;
     flex-direction: column;
 
-    h2 {
-        margin: 20px;
-    }
-        .purple_btn {
+}
+
+h2 {margin: 20px;}
+
+.purple_btn {
             align-self: center;
             background-color:rgb(224, 172, 224);
             height: 50px;
             width: 100px;
             margin: 2em;
             margin-left: 40px;
-            }
-    }
+}
 
-    .featurescontent {
+.featurescontent {
         p {
             padding: 10px;
         }
-    }
+}
 
-        .featuresdiv {
+.featuresdiv {
         width: 100%;
         text-align: center;
         margin: 20px;
-        h2 {
-            text-align: center;
-            margin: 20px;
-        }
-        .features-img {
-            padding: 2em;
-            width: 25em;
-             }
-        }
+}
 
-        footer {
-            width: 100%;
-            background-color:rgb(204, 189, 219);
+h2 {
+    text-align: center;
+    margin: 20px;
+}
+    
+.features-img {
+    padding: 2em;
+    width: 10%;
+            
+    float: right;
+}
+
+footer {
+    width: 100%;
+    background-color:rgb(204, 189, 219);
             
             .footercontent {
                text-align: center;
