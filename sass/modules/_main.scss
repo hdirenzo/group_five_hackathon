@@ -111,14 +111,36 @@ ul {
         footer {
             width: 100%;
             background-color:rgb(224, 172, 224);
-            display: flex;
-            justify-content: center;
-            align-content: center;
+            
+            .footercontent {
+               text-align: center;
+              
+               h2 {
+                font-size: medium;
+                font-weight: bold;
+                padding: 20px;
+               }
+            }
 
             .subscribe {
-                margin: 3em;
-                font-size: medium;
+                width: 80%;
+                text-align: right;
             }
+
+            .subscribe_btn {
+                background-color: #e0cdb8;
+                height: 50px;
+                width: 100px;
+                margin: 2em;
+                margin-left: 40px;
+                font-size: small;
+            }
+            
+            
+        }
+
+        .nav-footer {
+            font-size: smaller;
         }
 
 /* grid */
