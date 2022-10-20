@@ -1,5 +1,6 @@
 .carouselSection {
     display: grid;
+    justify-items: center;
     margin: .5em 0em .5em 0em;
     padding: 1em;
     grid-template-rows: minmax(300px 1fr);
@@ -12,17 +13,11 @@
 .carouselContainer {
     display: grid;
     grid-template-columns: repeat(1fr);
-    overflow: hidden;
+    // overflow: hidden;
     height: 30vh;
     border-radius: 1em;
     justify-items: center;
     align-items: center;
-    }
-    
-    .carouselContainer:hover {
-        cursor: pointer;
-        height: 80%;
-        width: 80%;
     }
     
     .carouselContainer img {
@@ -41,14 +36,10 @@
         transition: .25s;
     }
 
-.arrow {
-    color: black;
-    font-size: 3em;
-    float: left;
-
+.showcase {
+    max-width: max-content;
 }
 
-.arrow:hover {
-    color: blue;
+.showcase:hover {
     cursor: pointer;
 }
