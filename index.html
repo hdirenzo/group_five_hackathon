@@ -86,28 +86,10 @@
 
 
 
-        <section id="featuresDiv" class="flex flex-one inner-margin featurescontent">
-
-            <!-- This is necessary for JavaScript -->
-            <!-- JS Needs to target featuresContent for this to work -->
-            <div id="JSONFeatures">
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-            </div>
+        <section class="flex flex-one inner-margin featurescontent">
 
             <div class="featuresText">
                 <div class="title">
-                    <h2>Thermostat Aesthetics</h2>
                     <p class="subtitle">The thermostat is like a valve that opens and closes as a function of its temperature. The thermostat
                         isolates the engine from the radiator until it has reached a certain minimum temperature. Without a
                         thermostat, the engine would always lose heat to the radiator and take longer to warm up.</p>
@@ -131,45 +113,47 @@
             </div>
         </section>
 
-        <section class="promodiv">
-            <h2>Get Our Thermostat Now. Promo Will End On Weekend!</h2>
-            <p>Lowest Price Guaranteed On Thermostats. Shop Our Wide Selection Styles</p>
+        <section class="flex promodiv">
+            <h2>Get Our Thermostat Now. <br> Promo Will End On Weekend!</h2>
+            <p class="subtitle">Lowest Price Guaranteed On Thermostats. Shop Our Wide Selection Styles</p>
             <button class="purple_btn">Buy Now</button>
         </section>
     </main>
     <footer>
-        <div class="footercontent">
-            <img class="logo" src="/images/horizontal_logo.svg"> <!-- logo here -->
-            <p> Confirm you're eligible for an instant discount on qualifying thermostats by subscribing below.
-                <br>
-                Please enter the address associated with your home security account!
-            </p> <!-- text below logo -->
-
-            <h2>Subscribe to our website</h2>
-            <input> <!-- email type in here -->
-            <button class="subscribe_btn">Subscribe Now</button> <!-- subscribe now button -->
+        <div class="flex flex-one footercontent">
+            <div></div>
+            <div class="footer-text">
+                <img class="logo" src="/images/horizontal_logo.svg">
+                <p class="subtitle"> Confirm you're eligible for an instant discount on qualifying thermostats by subscribing below. Please enter the address associated with your home security account!</p>
+                
+            </div>
+            <div class="subscribe-form">
+                <h3>Subscribe to our website</h3>
+                <p class="subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="flex flex-one">
+                    <input placeholder="Enter Your Email..."><button class="subscribe_btn">Subscribe Now</button>
+                </div>
+            </div>
+            <div></div>
         </div>
-        <!-- <div class="subscribe">
-            <h2>Subscribe to our website</h2>
-            <input> 
-            <button class="purple_btn">Subscribe Now</button> 
-        </div> -->
-
-        <nav class="nav-footer">
-            <h2 class="hidden">Footer Navigation</h2>
-            <ul>
-                <li>Home</li>
-                <li>Products</li>
-                <li>Contact Us</li>
-            </ul>
-        </nav>
-        <div>
-            <img>
-            <img>
-            <img>
-            <img>
+        <div class="flex flex-one footer-bottom">
+            <div></div>
+            <nav class="nav-footer">
+                <h2 class="hidden">Footer Navigation</h2>
+                <ul class="nav-list">
+                    <li>Home</li>
+                    <li>Products</li>
+                    <li>Contact Us</li>
+                </ul>
+            </nav>
+            <div class="footer-icons flex">
+                <img class="icon" src="assets/fb.svg">
+                <img class="icon" src="assets/ig.svg">
+                <img class="icon" src="assets/twitter.svg">
+                <img class="icon" src="assets/pint.svg">
+            </div>
+            <div></div>
         </div>
-
     </footer>
 
     <script src="/js/main.js" defer type="module"></script>

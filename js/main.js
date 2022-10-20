@@ -3,10 +3,12 @@ import { getData } from "./modules/dataMiner.js";
 
 (() => {
 
+    console.log('main run...ok')
+
     // Variables
     let btnArrow = document.querySelector(".arrow");
-    let featuresDiv = document.querySelector("#featuresDiv");
-    let featuresContent = document.querySelector("#JSONFeatures");
+    let featuresDiv = document.querySelector(".featuresDiv");
+    let featuresContent = document.querySelector(".featuresContent");
 
     // Functions
      function getJSONData (featuresList) {
@@ -17,7 +19,8 @@ import { getData } from "./modules/dataMiner.js";
 
          // Run a loop for each item in the JSON file. We're passing in a variable called objectID that will do things
          productSpecsObj.forEach(objectID => {
-            // Make a copy of the panel thing and let the stuff equal the children
+             // admittedly, this is stupid but it works
+                 // target the first child, then target the children
              let panel = featuresContent.cloneNode(true),
               featuresStuff = panel.children;
 
@@ -44,6 +47,49 @@ import { getData } from "./modules/dataMiner.js";
      function moveCarousel() {
         
      }
+
+    // function flipCard(favThing) {
+
+    //     // Simple gsap animation
+    //     gsap.to(`#${favThing}`, {y:50, duration: 0.1,})
+    //     gsap.to(`#${favThing}`, {y:0, duration: 0.1, delay:0.1,})
+
+    //     // We are seeing if there are any classes with cardHide inside our card, and making a removing and adding function
+    //     let cardIdentifier = document.querySelector(`#${favThing}`);
+    //     let classAdder = cardIdentifier.querySelectorAll(".cardHide");
+    //     let classRemover = cardIdentifier.querySelectorAll(".cardInfo");
+
+    //     // if the length of the classAdder array is more than one, we have bitches to yeet out of there
+    //     if(classAdder.length > 1) {
+    //         console.log("card flipped to true");
+
+    //         // Data Editing
+    //         // A loop that adds the visible information to each element, and removes the previous one
+    //         classAdder.forEach(classAdder => {
+    //             classAdder.classList.add('cardInfo');
+    //             classAdder.classList.remove('cardHide');
+    //         })
+
+    //         // Then styles the card in the intended way
+    //         cardIdentifier.querySelector('.card').style.backgroundColor = "black";
+    //         cardIdentifier.querySelector('.card').style.opacity = "0.80";
+
+    //     // if the lentgh isn't more than one, it has to be zero, so there are the other kind of bitches to yeet 
+    //     } else {
+    //         console.log("card flipped to false");
+
+    //         // Loop that does the same as above just the inverse
+    //         classRemover.forEach(classRemover => {
+    //             classRemover.classList.add('cardHide');
+    //             classRemover.classList.remove('cardInfo');
+    //         })
+
+    //         // Same as above
+    //         cardIdentifier.querySelector('.card').style.backgroundColor = "transparent";
+    //         cardIdentifier.querySelector('.card').style.opacity = "1";
+
+    //     }
+    // }
 
     btnArrow.addEventListener("click", moveCarousel());
 

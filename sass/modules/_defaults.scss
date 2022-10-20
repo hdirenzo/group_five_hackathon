@@ -3,6 +3,10 @@ body {
     background-color: $bg-main;
 }
 
+section{
+    height: 70vh;
+}
+
 img{
     width: 100%;
 }
@@ -28,7 +32,7 @@ ul {
     display: flex;
 }
 
-.flex-one > div{
+.flex-one > *{
     flex: 1;
 }
 
@@ -40,16 +44,25 @@ ul {
     margin-top: 20px;
 }
 
-.brown_btn {
-    background-color: $color-secondary;
+button{
     text-align: center;
-    cursor: pointer;
-    color: $color-third;
     border: none;
     padding: 20px 50px;
     font-size: 20px;
+    cursor: pointer;
 }
 
-.botPad {
-    padding-bottom: 1em;
+.brown_btn {
+    background-color: $color-secondary;
+    color: $color-third;
+}
+
+.purple_btn {
+    background-color:$bg-secondary;
+    color: $color-third;
+}
+
+.icon{
+    width: 20px;
+    color: $color-third;
 }
