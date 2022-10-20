@@ -77,6 +77,11 @@
     }
 }
 
+.float-left {
+    display: grid;
+    justify-items: start;
+}
+
 .featurescontent {
     gap: 50px;
 

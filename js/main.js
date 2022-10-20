@@ -4,9 +4,11 @@ import { getData } from "./modules/dataMiner.js";
 (() => {
 
     // Variables
-    let btnArrow = document.querySelector(".arrow");
+    let imageShowcase = document.querySelector("#clickableImage");
+    let showcase = document.querySelector(".showcase");
     let featuresDiv = document.querySelector("#featuresDiv");
     let featuresContent = document.querySelector("#JSONFeatures");
+    let imageCount = 1;
 
     // Functions
      function getJSONData (featuresList) {
@@ -19,7 +21,7 @@ import { getData } from "./modules/dataMiner.js";
          productSpecsObj.forEach(objectID => {
             // Make a copy of the panel thing and let the stuff equal the children
              let panel = featuresContent.cloneNode(true),
-              featuresStuff = panel.children;
+            featuresStuff = panel.children;
 
              panel.firstElementChild.id = objectID;
 
@@ -39,13 +41,19 @@ import { getData } from "./modules/dataMiner.js";
              // add the completed element to the page
              featuresDiv.appendChild(panel);
          })
+         
      }
 
      function moveCarousel() {
-        
+        if (imageCount == 6) {
+            imageCount = 1;
+        } else {
+            imageCount++;
+        }
+            showcase.firstElementChild.src = `images/3d_renders/smart_thermostat_${imageCount}.jpg`;
+        console.log(imageCount);
      }
 
-    btnArrow.addEventListener("click", moveCarousel());
-
-    getData(`./data.json`, getJSONData);
+imageShowcase.addEventListener("click", (event)=>moveCarousel());
+getData(`./data.json`, getJSONData);
 })();
